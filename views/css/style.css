@@ -1,0 +1,28 @@
+section {
+	margin-top: 50px;
+}
+
+footer {
+	background-color: #CDCDC1;
+	padding: 2px;
+}
+
+.banner {
+	width: 100%;
+	min-height: 250px !important;
+}
+
+.autor {
+	width: 175px;
+	height: 175px;
+	min-width: 125px;
+	min-height: 125px;
+	margin: 0 auto;
+}
+
+.post-img {
+	width: 150px;
+	height: 150px;
+	min-width: 50px !important;
+	min-height: 50px !important;
+}
