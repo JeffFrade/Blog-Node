@@ -11,6 +11,14 @@ app.get('/login', function(req, res) {
 	res.render('pages/login');
 });
 
+app.get('/frontend', function(req, res){
+	app.render('pages/login');
+});
+
+app.get('/backend', function(req, res){
+	app.render('pages/login');
+});
+
 app.listen(8000, function() {
 	console.log("localhost:8000");
 });
