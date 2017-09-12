@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "Blog",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,11 +11,13 @@
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.15.4",
+    "express-validator": "^4.1.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.0",
     "gulp-less": "^3.3.2",
     "gulp-uglify": "^3.0.0",
-    "mysql": "^2.14.1"
+    "mysql": "^2.14.1",
+    "vue": "^1.0.28"
   }
 }
