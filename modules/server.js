@@ -5,6 +5,10 @@ module.exports = function() {
 	var app = express();
 	//Rotas:
 	var routes = require('../modules/routes');
+	//Banco de Dados:
+	var db = require('../modules/db');
+	//Inicializando o Banco de Dados:
+	db();
 	//Carregando as Rotas:
 	routes(app);
 	//Mecânismo de Views:
