@@ -30,3 +30,13 @@ html > body > section > .container > .row > #banner {
 .post-img {
 	margin: 0 auto;
 }
+
+.login{
+    background: url(http://mymaplist.com/img/parallax/back.png) !important;
+	background-color: #444 !important;
+    background: url(http://mymaplist.com/img/parallax/pinlayer2.png),url(http://mymaplist.com/img/parallax/pinlayer1.png),url(http://mymaplist.com/img/parallax/back.png) !important;    
+}
+
+.vertical-offset-100{
+    padding-top:100px;
+}
