@@ -1,3 +1,5 @@
+var users = require('../controllers/usersController');
+
 module.exports = function(app) {
 	app.get('/', function(req, res) {
 		res.render('pages/home');
@@ -5,6 +7,10 @@ module.exports = function(app) {
 
 	app.get('/login', function(req, res) {
 		res.render('pages/login');
+	});
+
+	app.post('/login', function(req, res){
+		users.login(req, res);
 	});
 
 	app.get('/frontend', function(req, res){
