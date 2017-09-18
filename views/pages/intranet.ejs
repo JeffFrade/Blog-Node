@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Intranet - Gráficos</title>
-
+    <title>Intranet - Dashboard</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -23,7 +19,6 @@
 </head>
 
 <body>
-
     <div id="wrapper">
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -57,36 +52,35 @@
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-                    </li>
-                    <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-                    </li>
-                    <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#postagens"><i class="fa fa-fw fa-inbox"></i> Postagens <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="postagens" class="collapse">
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <a href="#">Cadastrar Post</a>
                             </li>
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <a href="#">Consultar Post</a>
+                            </li>
+                            <li>
+                                <a href="#">Gráficos</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                        <a href="tables.html"><i class="fa fa-fw fa-comments"></i> Comentários</a>
                     </li>
                     <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#usuarios"><i class="fa fa-fw fa-user"></i> Usuários <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="usuarios" class="collapse">
+                            <li>
+                                <a href="#">Cadastrar Usuário</a>
+                            </li>
+                            <li>
+                                <a href="#">Consultar Usuário</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-group"></i> Inscritos</a>
                     </li>
                 </ul>
             </div>
@@ -158,7 +152,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-address-card fa-5x"></i>
+                                        <i class="fa fa-group fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">8</div>
@@ -228,7 +222,7 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-address-card"></i> 8 Últimas Inscrições</h3>
+                                <h3 class="panel-title"><i class="fa fa-group"></i> 8 Últimas Inscrições</h3>
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
@@ -244,7 +238,7 @@
                                         <tbody>
                                             <tr>
                                                 <td class="text-center">8</td>
-                                                <td class="text-center">10/21/2013</td>
+                                                <td class="text-center">17/09/2017</td>
                                                 <td class="text-center">Fulano</td>
                                                 <td class="text-center">fulano@mail.com</td>
                                             </tr>
@@ -300,67 +294,67 @@
             </div>
         </div>
     </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-        <script src="../js/vue.min.js"></script>
-        <script src="../js/Chart.min.js"></script>
-        <script src="../js/script.min.js"></script>
-        <script type="text/javascript">
-            var ctx = document.getElementById("myChart1");
-            var myChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
-                    datasets: [{
-                        label: 'Postagens',
-                        data: [12, 19, 3, 5, 2, 3, 5, 4, 10, 11, 9, 13],
-                        backgroundColor: [
-                            'rgba(0, 255, 0, 0.2)'
-                        ],
-                        borderColor: [
-                            'rgba(0, 255, 0, 1)'
-                        ],
-                        borderWidth: 1
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/Chart.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script type="text/javascript">
+        var ctx = document.getElementById("myChart1");
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+                datasets: [{
+                    label: 'Postagens',
+                    data: [12, 19, 3, 5, 2, 3, 5, 4, 10, 11, 9, 13],
+                    backgroundColor: [
+                        'rgba(0, 255, 0, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(0, 255, 0, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
                     }]
-                },
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
-                            }
-                        }]
-                    }
                 }
-            });
+            }
+        });
 
-            var ctx1 = document.getElementById("myChart2");
-            var myChart1 = new Chart(ctx1, {
-                type: 'doughnut',
-                data: {
-                    datasets: [{
-                        data: [12, 19, 3, 5, 2, 3],
-                        backgroundColor: [
-                            'rgba(255,99,132,1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                        borderColor: [
-                            'rgba(255,99,132,1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                    }],
+        var ctx1 = document.getElementById("myChart2");
+        var myChart1 = new Chart(ctx1, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                }],
 
-                    labels: ["PHP", ".NET", "Node JS", "HTML 5", "CSS", "Javascript"]
-                }
-            });
-            </script>
-    </body>
+                labels: ["PHP", ".NET", "Node JS", "HTML 5", "CSS", "Javascript"]
+            }
+        });
+    </script>
+</body>
 </html>

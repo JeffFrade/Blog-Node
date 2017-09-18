@@ -8,7 +8,7 @@ module.exports = function() {
 			if (resultado[0]['COUNT(*)']) {
 				res.render('pages/intranet');
 			} else {
-				res.render('pages/login', {erro:'Usuário ou Senha Incorretos', attr:'alert alert-danger alert-dimissible'});
+				res.render('pages/login', {erro:'Usuário ou Senha Incorretos.', attr:'alert alert-danger alert-dimissible'});
 			}
 		});
 	};
