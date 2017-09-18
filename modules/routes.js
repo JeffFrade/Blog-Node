@@ -6,7 +6,7 @@ module.exports = function(app) {
 	});
 
 	app.get('/login', function(req, res) {
-		res.render('pages/login');
+		res.render('pages/login', {erro:'', attr:''});
 	});
 
 	app.post('/login', function(req, res){
@@ -14,10 +14,14 @@ module.exports = function(app) {
 	});
 
 	app.get('/frontend', function(req, res){
-		app.render('pages/login');
+		app.render('pages/login', {erro:'', attr:''});
 	});
 
 	app.get('/backend', function(req, res){
-		app.render('pages/login');
+		app.render('pages/login', {erro:'', attr:''});
+	});
+
+	app.get('/intranet', function(req, res){
+		app.render('pages/intranet');
 	});
 };

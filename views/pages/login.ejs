@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Home</title>
+		<title>Login</title>
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -30,6 +30,13 @@
 						    		
 						    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
 						    	</fieldset>
+
+						    	<br/>
+
+						    	<% if (attr !== '' && erro !== '') { %>
+						    		<%= console.log("1"); %>
+						    		<div class="<%= attr %>"><%= erro %> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+						    	<% } %>
 					      	</form>
 					    </div>
 					</div>
@@ -39,7 +46,8 @@
 		<script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
-		<script src="../../../node_modules/vue/dist/vue.min.js"></script>
+		<script src="../js/vue.min.js"></script>
+        <script src="../js/Chart.min.js"></script>
 		<script src="../js/script.min.js"></script>
 	</body>
 </html>
